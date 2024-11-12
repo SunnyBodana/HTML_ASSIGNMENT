@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Registration form</title>
+    <style>
+        table{
+            font-size:19px;
+        }
+     
+    </style>
+</head>
+<body>
+
+    <form action="/action.php" method = "post">
+
+        <table cellspacing="9" cellpadding="4" width="50%"  >  
+            <thead>
+
+                <tr>
+                    <th colspan="2" style="font-size:35px; color: red;">
+                    <img src="../wd6.png" alt="staff logo" height="100px" width="200px">
+                    Employee Registration form
+                    </th>
+                </tr>
+
+            </thead>
+
+
+            <tbody>
+
+            <tr >
+                <td></td>
+                <td width="65%">
+                    <br>
+                    Mr. <input type="radio" name="gender" id="a1" checked>
+                    Mrs. <input type="radio" name="gender" id="a2" >
+                    Ms. <input type="radio" name="gender" id="a3" >
+                </td>
+            </tr>
+
+            <tr >
+                <td align="right">First Name </td>
+                <td> <input type="text" placeholder="FirstName" required pattern="[a-zA-Z]+" ></td>
+            </tr>
+
+            <tr >
+                <td align="right">Last Name </td>
+                <td> <input type="text" placeholder="LastName" required pattern="[a-zA-Z]+" ></td>
+            </tr>
+
+            <tr>
+                <td align="right">Mail Address1 </td>
+                <td> <input type="email" required ></td>
+            </tr>
+
+            <tr>
+                <td align="right">Mail Address2 </td>
+                <td> <input type="email" required ></td>
+            </tr>
+
+            <tr >
+                <td align="right">State </td>
+                <td> 
+                    <select name="State" id="State">
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Gujarat" selected >Gujatar</option>
+                        <option value="Maharastra">MAharastra</option>
+                        <option value="Panjab">Panjab</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr >
+                <td align="right">Zip </td>
+                <td> </td>
+            </tr>
+
+            <tr>
+                <td align="right">Upload Photo </td>
+                <td> <input type="file" multiple></td>
+            </tr>
+
+            <tr>
+                <td align="right">E-Mail </td>
+                <td> <input type="email"></td>
+            </tr>
+
+            <tr>
+                <td align="right">Mobile</td>
+                <td> <input type="number" placeholder="+91" required  pattern="[0-9]{10}" ></td>
+            </tr>
+
+            <tr>
+                <td align="right">Languages known </td>
+                <td> 
+                    <input type="checkbox" checked> Gujarati <br>
+                    <input type="checkbox" > Hindi <br>
+                    <input type="checkbox" checked> English <br>
+                    <input type="checkbox" checked> Marathi <br>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">Additional Information </td>
+                <td>
+                    <textarea name="Additional_Info" id="" cols="28" rows="8"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td  align="right"></td>
+                <td>
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </tbody>
+
+        </table>
+    </form>
+</body>
+</html>
